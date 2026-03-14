@@ -58,7 +58,6 @@
     <Reference Include="CommandLine, Version=2.6.0.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
       <HintPath>..\packages\CommandLineParser.2.6.0\lib\net461\CommandLine.dll</HintPath>
     </Reference>
-    <Reference Include="MathNet.Numerics, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
@@ -85,13 +84,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HE WrapperStandard\HE WrapperStandard.csproj">
+      <Project>{8bb7b985-3d25-4b34-9749-b84002b2a057}</Project>
+      <Name>HE WrapperStandard</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NeuralNetworks\NeuralNetworks.csproj">
       <Project>{ea13024b-33c1-4659-83f7-99d87031c5df}</Project>
       <Name>NeuralNetworks</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HE Wrapper\HE Wrapper.csproj">
-      <Project>{23ab097c-fd1f-451b-b5dc-875e09e5699a}</Project>
-      <Name>HE Wrapper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

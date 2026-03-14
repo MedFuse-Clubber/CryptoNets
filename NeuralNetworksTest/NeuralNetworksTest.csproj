@@ -69,10 +69,6 @@
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.1.4.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="SEALNET, Version=1.0.6833.10411, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\SEAL Wrapper\SEAL Wrapper\SEALNET.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
@@ -97,6 +93,10 @@
       <Project>{736d8cb8-353d-4e07-9770-7e34f7f41be1}</Project>
       <Name>CryptoNets</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HE WrapperStandard\HE WrapperStandard.csproj">
+      <Project>{8bb7b985-3d25-4b34-9749-b84002b2a057}</Project>
+      <Name>HE WrapperStandard</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LowLatencyCryptoNets\LowLatencyCryptoNets.csproj">
       <Project>{fa3ec7c0-907c-4369-acc0-1493c2fde3f3}</Project>
       <Name>LowLatencyCryptoNets</Name>
@@ -104,10 +104,6 @@
     <ProjectReference Include="..\NeuralNetworks\NeuralNetworks.csproj">
       <Project>{ea13024b-33c1-4659-83f7-99d87031c5df}</Project>
       <Name>NeuralNetworks</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HE Wrapper\HE Wrapper.csproj">
-      <Project>{23ab097c-fd1f-451b-b5dc-875e09e5699a}</Project>
-      <Name>HE Wrapper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

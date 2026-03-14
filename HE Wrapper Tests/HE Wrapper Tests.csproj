@@ -87,9 +87,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HE Wrapper\HE Wrapper.csproj">
-      <Project>{23ab097c-fd1f-451b-b5dc-875e09e5699a}</Project>
-      <Name>HE Wrapper</Name>
+    <ProjectReference Include="..\HE WrapperStandard\HE WrapperStandard.csproj">
+      <Project>{8bb7b985-3d25-4b34-9749-b84002b2a057}</Project>
+      <Name>HE WrapperStandard</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

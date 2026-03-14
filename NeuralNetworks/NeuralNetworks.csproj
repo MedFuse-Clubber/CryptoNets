@@ -57,10 +57,6 @@
     <Reference Include="MathNet.Numerics.Data.Text, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MathNet.Numerics.Data.Text.4.0.0\lib\net40\MathNet.Numerics.Data.Text.dll</HintPath>
     </Reference>
-    <Reference Include="SEALNET, Version=1.0.6833.10411, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\Users\rang\source\repos\SEAL Wrapper\SEAL Wrapper\SEALNET.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
@@ -100,9 +96,12 @@
     <Compile Include="LLInterleaveLayer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HE Wrapper\HE Wrapper.csproj">
-      <Project>{23ab097c-fd1f-451b-b5dc-875e09e5699a}</Project>
-      <Name>HE Wrapper</Name>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HE WrapperStandard\HE WrapperStandard.csproj">
+      <Project>{8bb7b985-3d25-4b34-9749-b84002b2a057}</Project>
+      <Name>HE WrapperStandard</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
