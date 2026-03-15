@@ -1,13 +1,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using MathNet.Numerics.LinearAlgebra;
+using MathNet.Numerics.LinearAlgebra;
 using System.IO;
 using System;
 using System.Linq;
 using MathNet.Numerics.Data.Text;
 
-namespace HEWrapper
+namespace HE_WrapperStandard
 {
     public class RawMatrix : IMatrix
     {

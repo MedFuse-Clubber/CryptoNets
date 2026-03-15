@@ -1,8 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using System;
-using HEWrapper;
+using System;
+using HE_WrapperStandard;
 using MathNet.Numerics.LinearAlgebra;
 
 namespace NeuralNetworks

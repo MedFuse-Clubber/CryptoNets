@@ -4,7 +4,7 @@
 using System;
 using System.Numerics;
 
-namespace HEWrapper
+namespace HE_WrapperStandard
 {
     /// <summary>
     /// Extension methods for BigInteger

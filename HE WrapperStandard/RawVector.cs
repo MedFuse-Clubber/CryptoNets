@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using MathNet.Numerics.LinearAlgebra;
+using MathNet.Numerics.LinearAlgebra;
 using System.IO;
 using MathNet.Numerics.Data.Text;
 using System;
@@ -9,7 +9,7 @@ using System.Numerics;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace HEWrapper
+namespace HE_WrapperStandard
 {
     public class RawVector : IVector
     {

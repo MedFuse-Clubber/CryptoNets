@@ -1,13 +1,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using MathNet.Numerics.LinearAlgebra;
+using MathNet.Numerics.LinearAlgebra;
 using System.Collections.Generic;
 using System.IO;
 using System.Numerics;
 using System;
 
-namespace HEWrapper
+namespace HE_WrapperStandard
 {
     /// <summary>
     /// The format of the vector

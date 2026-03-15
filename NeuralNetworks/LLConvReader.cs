@@ -3,9 +3,9 @@
 
 ﻿using System;
 using System.Collections.Generic;
-using HEWrapper;
 using System.IO;
 using MathNet.Numerics.LinearAlgebra;
+using HE_WrapperStandard;
 
 namespace NeuralNetworks
 {

@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿namespace HEWrapper
+namespace HE_WrapperStandard
 {
     /// <summary>
     /// ComputationalEnvironments are used by each scheme to store information that is needed

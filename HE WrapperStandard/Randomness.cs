@@ -1,11 +1,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using System;
+using System;
 using System.Numerics;
 using System.Security.Cryptography;
 
-namespace HEWrapper
+namespace HE_WrapperStandard
 {
     static public class Randomness
     {

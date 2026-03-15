@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using System;
+using System;
 using NeuralNetworks;
-using HEWrapper;
+using HE_WrapperStandard;
 
 namespace CryptoNets
 {

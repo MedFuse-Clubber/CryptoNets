@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using MathNet.Numerics.LinearAlgebra;
+using MathNet.Numerics.LinearAlgebra;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Numerics;
 
-namespace HEWrapper
+namespace HE_WrapperStandard
 {
     /// <summary>
     /// The factory is used to:

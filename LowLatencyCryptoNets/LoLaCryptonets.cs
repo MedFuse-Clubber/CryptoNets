@@ -1,11 +1,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using System;
+using System;
 using System.Linq;
 using NeuralNetworks;
-using HEWrapper;
 using CommandLine;
+using HE_WrapperStandard;
 
 namespace LowLatencyCryptoNets
 {

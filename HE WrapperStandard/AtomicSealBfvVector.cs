@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,7 +14,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace HEWrapper
+namespace HE_WrapperStandard
 {
     public class AtomicSealBfvEncryptedEnvironment : IComputationEnvironment
     {

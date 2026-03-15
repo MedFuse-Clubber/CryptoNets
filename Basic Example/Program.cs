@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using System;
+using System;
 using MathNet.Numerics.LinearAlgebra;
-using HEWrapper;
+using HE_WrapperStandard;
 
 
 namespace Basic_Example

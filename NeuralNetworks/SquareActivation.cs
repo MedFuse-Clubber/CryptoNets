@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using HEWrapper;
+using HE_WrapperStandard;
 
 namespace NeuralNetworks
 {

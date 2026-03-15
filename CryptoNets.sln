@@ -1,3 +1,4 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.1.11312.151
@@ -27,7 +28,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{6F9DF87F-3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inference Applications", "Inference Applications", "{9004CBFB-BE2D-420D-9883-A332793930AB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{EACFC0D6-38A7-4099-A3FB-15B2BF4EF7B3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{EACFC0D6-38A7-4099-A3FB-15B2BF4EF7B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataPreprocess", "DataPreprocess\DataPreprocess.csproj", "{16A2DCEE-CF86-4BBD-B35B-5BB2EF88DAFF}"
 EndProject
@@ -44,6 +45,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HE WrapperStandard", "HE WrapperStandard\HE WrapperStandard.csproj", "{8BB7B985-3D25-4B34-9749-B84002B2A057}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HE WrapperStandard Tests", "HE WrapperStandard Tests\HE WrapperStandard Tests.csproj", "{A26A72B5-89F0-43E4-8896-B5AD5A3D111B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Net", ".Net", "{D41B1EC1-284E-4253-AE60-64EA7FD701AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "神經網路", "神經網路\神經網路.csproj", "{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -199,6 +204,18 @@ Global
 		{A26A72B5-89F0-43E4-8896-B5AD5A3D111B}.Release|x64.Build.0 = Release|Any CPU
 		{A26A72B5-89F0-43E4-8896-B5AD5A3D111B}.Release|x86.ActiveCfg = Release|Any CPU
 		{A26A72B5-89F0-43E4-8896-B5AD5A3D111B}.Release|x86.Build.0 = Release|Any CPU
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}.Debug|x64.Build.0 = Debug|Any CPU
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}.Debug|x86.Build.0 = Debug|Any CPU
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}.Release|x64.ActiveCfg = Release|Any CPU
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}.Release|x64.Build.0 = Release|Any CPU
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}.Release|x86.ActiveCfg = Release|Any CPU
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -216,6 +233,7 @@ Global
 		{16A2DCEE-CF86-4BBD-B35B-5BB2EF88DAFF} = {6F9DF87F-3D81-4248-80AE-9D972474797E}
 		{8BB7B985-3D25-4B34-9749-B84002B2A057} = {529EF668-F35A-4885-8C22-07A00DB7D73E}
 		{A26A72B5-89F0-43E4-8896-B5AD5A3D111B} = {529EF668-F35A-4885-8C22-07A00DB7D73E}
+		{2653DB39-3A2B-4F54-8EBB-FA3B67944AAC} = {D41B1EC1-284E-4253-AE60-64EA7FD701AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F3100B58-5F4C-45E7-96A3-F4D971ACA6A0}

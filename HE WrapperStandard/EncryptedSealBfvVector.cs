@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using MathNet.Numerics.LinearAlgebra;
@@ -12,7 +12,7 @@ using System.IO.Compression;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 
-namespace HEWrapper
+namespace HE_WrapperStandard
 {
     public class EncryptedSealBfvEnvironment : IComputationEnvironment
     {

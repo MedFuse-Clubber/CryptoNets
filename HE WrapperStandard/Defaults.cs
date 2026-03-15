@@ -3,7 +3,7 @@
 
 ﻿using System;
 
-namespace HEWrapper
+namespace HE_WrapperStandard
 {
     public static class Defaults
     {

@@ -1,11 +1,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using HEWrapper;
+using HE_WrapperStandard;
 using MathNet.Numerics.LinearAlgebra;
 
 namespace NeuralNetworks

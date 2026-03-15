@@ -1,12 +1,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using System;
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using HEWrapper;
 using System.Linq;
 using MathNet.Numerics.LinearAlgebra;
 using System.IO;
+using HE_WrapperStandard;
 
 
 

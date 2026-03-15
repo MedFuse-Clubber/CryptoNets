@@ -1,11 +1,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using System.IO;
+using System.IO;
 using System;
 using System.Linq;
 using NeuralNetworks;
-using HEWrapper;
+using HE_WrapperStandard;
 
 namespace Caltech101
 {

@@ -57,6 +57,9 @@
     <Reference Include="MathNet.Numerics.Data.Text, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MathNet.Numerics.Data.Text.4.0.0\lib\net40\MathNet.Numerics.Data.Text.dll</HintPath>
     </Reference>
+    <Reference Include="SEALNet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=AMD64">
+      <HintPath>..\packages\Microsoft.Research.SEALNet.4.1.1\lib\netstandard2.0\SEALNet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
@@ -111,5 +114,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\MathNet.Numerics.MKL.Win-x64.2.3.0\build\MathNet.Numerics.MKL.Win-x64.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MathNet.Numerics.MKL.Win-x64.2.3.0\build\MathNet.Numerics.MKL.Win-x64.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Research.SEALNet.4.1.1\build\Microsoft.Research.SEALNet.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Research.SEALNet.4.1.1\build\Microsoft.Research.SEALNet.targets'))" />
   </Target>
+  <Import Project="..\packages\Microsoft.Research.SEALNet.4.1.1\build\Microsoft.Research.SEALNet.targets" Condition="Exists('..\packages\Microsoft.Research.SEALNet.4.1.1\build\Microsoft.Research.SEALNet.targets')" />
 </Project>

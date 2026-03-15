@@ -8,7 +8,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Numerics;
 
-namespace HEWrapper
+namespace HE_WrapperStandard
 {
     /// <summary>
     /// the CryptoTracker is used to measure the availabel noise budget during the execution.

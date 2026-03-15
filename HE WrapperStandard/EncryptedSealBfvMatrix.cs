@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using MathNet.Numerics.LinearAlgebra;
 
-namespace HEWrapper
+namespace HE_WrapperStandard
 {
     /// <summary>
     /// represents an encrypted matrix using SEAL

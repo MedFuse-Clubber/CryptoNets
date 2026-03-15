@@ -1,14 +1,14 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT license.
 
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NeuralNetworks;
 using System.Linq;
-using HEWrapper;
 using MathNet.Numerics.LinearAlgebra;
 using System.Collections.Generic;
 using CryptoNets;
 using System;
+using HE_WrapperStandard;
 
 namespace NeuralNetworksTest
 {
