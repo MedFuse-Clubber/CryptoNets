@@ -245,11 +245,11 @@ namespace HE_WrapperStandard
         const int DefaultGaloisDecompositionBitCount  = 20;
         public static readonly uint[] DefaultGaloisElements = new uint[] { 3, 5, 7, 11, 15, 23, 27, 29, 39, 41, 47, 53, 59, 61, 65, 67, 71, 73, 79, 83, 85, 89, 95, 101, 103, 107, 109, 113, 115, 119, 125, 127 };
 
-        public EncryptedSealBfvFactory()
+        public EncryptedSealBfvFactory(ulong polyModulusDegree = 4096)
         {
             ulong[] primes = new ulong[] { 40961, 65537, 114689, 147457, 188417 };
             EncryptedSealBfvEnvironment eenv = new EncryptedSealBfvEnvironment() { ParentFactory = this };
-            eenv.GenerateEncryptionKeys(primes, 4096, DefaultDecompositionBitCount, DefaultGaloisDecompositionBitCount, -1, DefaultGaloisElements);
+            eenv.GenerateEncryptionKeys(primes, polyModulusDegree, DefaultDecompositionBitCount, DefaultGaloisDecompositionBitCount, -1, DefaultGaloisElements);
             referenceEnvironment = eenv;
         }
 

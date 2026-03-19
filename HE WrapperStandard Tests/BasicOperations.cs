@@ -26,7 +26,7 @@ namespace HE_Wrapper_Tests
         readonly double[,] values_m = new double[,] { { 1, -2, 3, -44, 5, 7 }, { 99, 12, -88, 22, 16, 13 } };
         Matrix<double> m = null;
         IMatrix mat = null;
-        IFactory Factory = new EncryptedSealBfvFactory();
+        IFactory Factory = new EncryptedSealBfvFactory(4096);
 
         public BasicOperations()
         {

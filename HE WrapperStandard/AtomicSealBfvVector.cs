@@ -33,13 +33,15 @@ namespace HE_WrapperStandard
         public Plaintext PlainZero;
         public ulong plainmodulusValue = 0;
         public int PlaintextCapacity { get { return (int)parameters.PolyModulusDegree; } }
+        public ulong _polyModulusDegree = 4096;
         public ulong CiphertextCapacity { get { return 3; } }
 
         public IFactory ParentFactory { get; set; }
 
 
-        public AtomicSealBfvEncryptedEnvironment()
+        public AtomicSealBfvEncryptedEnvironment(ulong prime = 65537, ulong polyModulusDegree = 4096)
         {
+            _polyModulusDegree = polyModulusDegree;
         }
 
         public AtomicSealBfvEncryptedEnvironment(AtomicSealBfvEncryptedEnvironment p)
@@ -68,10 +70,22 @@ namespace HE_WrapperStandard
             decryptor = new Decryptor(context, keys.SecretKey);
             builder = new BatchEncoder(context);
             keys.CreateRelinKeys(out relinKeys);
-            keys.CreateGaloisKeys(GaloisElements, out galoisKeys);
+            keys.CreateGaloisKeys(GenerateGaloisElements(_polyModulusDegree), out galoisKeys);
             secretKey = new SecretKey(keys.SecretKey);
             PlainZero = new Plaintext("0", memoryPool);
             plainmodulusValue = parameters.PlainModulus.Value;
+        }
+
+        //  The Galois elements are odd integers in the interval [1, M-1], where M = 2*N,
+        //  and N = PolyModulusDegree, that is a Galois automorphism by a Galois element p changes Enc(plain(x))
+        //  to Enc(plain(x^p)).
+        public static IEnumerable<uint> GenerateGaloisElements(ulong polyModulusDegree = 4096)
+        {
+            // the Galois elements are odd integers in the interval [1, M-1], where M = 2*N, and N = PolyModulusDegree, that is a Galois automorphism by a Galois element p changes Enc(plain(x)) to Enc(plain(x^p)).
+            // unsigned 128-bit is applicable 
+            ulong M = 2 * polyModulusDegree;
+            for (uint i = 1; i < M; i += 2)
+                yield return i;
         }
 
         public AtomicSealBfvEncryptedEnvironment GetPublicKeys()
@@ -144,7 +158,7 @@ namespace HE_WrapperStandard
             {
                 PlainModulus = new Modulus(t),
                 PolyModulusDegree = n,
-                CoeffModulus = parameters.CoeffModulus.Take(Convert.ToInt32(n))
+                CoeffModulus = parameters?.CoeffModulus.Take(Convert.ToInt32(n)) ?? CoeffModulus.BFVDefault(n, SecLevelType.TC192)
             };
             if (SmallModulusCount > 0)
                 parms.CoeffModulus = parms.CoeffModulus.Take(SmallModulusCount).ToList();
@@ -160,7 +174,6 @@ namespace HE_WrapperStandard
             };
             return parms;
         }
-
         public void GenerateEncryptionKeys(ulong prime, ulong n, int DecompositionBitCount, int GaloisDecompositionBitCount, int SmallModulusCount, IEnumerable<uint> GaloisElement = null)
         {
             GenerateEncryptionKeys(Parms(parameters, prime, n, SmallModulusCount), DecompositionBitCount, GaloisDecompositionBitCount, GaloisElement);

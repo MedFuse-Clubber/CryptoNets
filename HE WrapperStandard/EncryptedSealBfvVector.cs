@@ -93,7 +93,7 @@ namespace HE_WrapperStandard
             var envs = new AtomicSealBfvEncryptedEnvironment[primes.Length];
             Parallel.For(0, primes.Length, i =>
             {
-                envs[i] = new AtomicSealBfvEncryptedEnvironment();
+                envs[i] = new AtomicSealBfvEncryptedEnvironment(primes[i], n);
                 envs[i].GenerateEncryptionKeys(primes[i], n, DecompositionBitCount, GaloisDecompositionBitCount, SmallModulusCount, DefaultGaloisElements);
                 envs[i].ParentFactory = new AtomicEncryptedFactory() { ReferenceEnvironment = envs[i] };
             });
